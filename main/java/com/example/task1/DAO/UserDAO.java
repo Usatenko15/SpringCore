@@ -1,5 +1,6 @@
 package com.example.task1.DAO;
 
+import com.example.task1.configuration.DB;
 import com.example.task1.model.EntityName;
 import com.example.task1.model.Key;
 import model.User;
@@ -15,8 +16,8 @@ public class UserDAO {
     private Map<Key, Object> dataBase;
 
     @Autowired
-    public void setDataBase(Map<Key, Object> dataBase) {
-        this.dataBase = dataBase;
+    public void setDataBase(DB db) {
+        this.dataBase = db.getDB();
     }
 
 

@@ -1,5 +1,6 @@
 package com.example.task1.DAO;
 
+import com.example.task1.configuration.DB;
 import com.example.task1.model.EntityName;
 import com.example.task1.model.Key;
 import com.example.task1.model.TicketImpl;;
@@ -18,8 +19,8 @@ public class TicketDAO {
     private Map<Key, Object> dataBase;
 
     @Autowired
-    public void setDataBase(Map<Key, Object> dataBase) {
-        this.dataBase = dataBase;
+    public void setDataBase(DB db) {
+        this.dataBase = db.getDB();
     }
 
     public Ticket bookTicket(long userId, long eventId, int place, Ticket.Category category) {

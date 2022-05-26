@@ -10,25 +10,26 @@ import model.Event;
 import model.Ticket;
 import model.User;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+@ExtendWith(MockitoExtension.class)
 class TicketServiceTest {
 
-    @Autowired
+    @InjectMocks
     TicketService ticketService;
-    @MockBean
+    @Mock
     TicketDAO ticketDAO;
-    @MockBean
+    @Mock
     UserDAO userDAO;
-    @MockBean
+    @Mock
     EventDAO eventDAO;
 
 

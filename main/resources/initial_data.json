@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "name": "Ivan",
+      "email": "ivan@gmail.com"
+    },
+    {
+      "name": "Sergei",
+      "email": "sergei@gmail.com"
+    },
+    {
+      "name": "Ivan2",
+      "email": "ivan2@gmail.com"
+    },
+    {
+      "name": "Sergei2",
+      "email": "sergei2@gmail.com"
+    }
+  ],
+  "events": [
+    {
+      "title": "Event1",
+      "date": "2022-05-23"
+    },
+    {
+      "title": "Event2",
+      "date": "2021-01-12"
+    },
+    {
+      "title": "Event3",
+      "date": "2020-09-23"
+    },
+    {
+      "title": "Event4",
+      "date": "2021-03-12"
+    }
+  ],
+  "tickets": [
+    {
+      "eventId": 1,
+      "userId": 1,
+      "category": "STANDARD",
+      "place": 24
+    },
+    {
+      "eventId": 1,
+      "userId": 2,
+      "category": "PREMIUM",
+      "place": 12
+    },
+    {
+      "eventId": 2,
+      "userId": 3,
+      "category": "STANDARD",
+      "place": 2
+    },
+    {
+      "eventId": 3,
+      "userId": 2,
+      "category": "BAR",
+      "place": 17
+    }
+  ]
+}
